@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+  import WeatherSummary from './components/WeatherSummary.vue';
+</script>
 
 <template>
   <div class="page">
@@ -11,20 +13,7 @@
                 <div class="city-inner">
                   <input type="text" class="search" />
                 </div>
-                <div class="summary">
-                  <div
-                    style="
-                      background-image: url('./img/weather-main/thunderstorm.png');
-                    "
-                    class="pic-main"
-                  ></div>
-                  <div class="weather">
-                    <div class="temp">14 °C</div>
-                    <div class="weather-desc text-block">Thunderstorm</div>
-                  </div>
-                  <div class="city text-block">Paris, FR</div>
-                  <div class="date text-block">Thu, March 16, 2023</div>
-                </div>
+                <WeatherSummary />
               </div>
             </section>
             <section class="section section-right">
